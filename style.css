@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 5rem;
+    background: linear-gradient(to right, purple, rgb(193, 0, 106));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* CARD AREA */
+.card {
+    width: 30rem;
+    height: 48rem;
+    background-color: gray;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+}
+
+.delete-card-btn {
+    background-color: transparent;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    padding: .5rem;
+}
+
+.delete-card-btn:hover {
+    cursor: pointer;
+}
+
+.delete-icon {
+    font-size: 3rem;
+    color: white;
+}
+
+.card-title {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card-icon {
+    font-size: 10rem;
+    color: white;
+    margin: 5rem 0;
+}
+
+.card-temperature {
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card-description {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: white;
+}
+
+.button {
+    padding: 0 4rem;
+    margin-left: 1rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    background-color: rgb(87, 16, 101);
+    border: none;
+    border-radius: .5rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.button:active {
+    transform: scale(95%);
+    filter: brightness(80%);
+}
+
+.card-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card--cloudy {
+    background: linear-gradient(to bottom right, rgb(111, 216, 230), rgb(73, 184, 199));
+}
+
+.card--sunny {
+    background: linear-gradient(to bottom right, rgb(255, 183, 0), rgb(235, 148, 55));
+}
+
+.card--stormy {
+    background: linear-gradient(to bottom right, rgb(70, 96, 113),  rgb(57, 74, 85));
+}
+
+.card--snowy {
+    background: linear-gradient(to bottom right, rgb(111, 123, 131),  rgb(92, 96, 97));
+}
+
+.card--rainy {
+    background: linear-gradient(to bottom right, rgb(82, 82, 210),  rgb(54, 135, 198));
+}
+
+.card--windy {
+    background: linear-gradient(to bottom right, rgb(36, 75, 101),  rgb(33, 86, 121));
+}
+
+/* USER AREA */
+.user-area {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.user-area--header {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.user-area--input {
+    width: 100%;
+    max-width: 50rem;
+    height: 5.5rem;
+    margin: 5rem auto;
+    display: flex;
+}
+
+.input {
+    flex: 1;
+    padding: 0 2rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.5rem;
+}
