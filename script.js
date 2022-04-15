@@ -61,8 +61,6 @@ function createCard(weather, temperature, name) {
     // New Icon
     const newCardIcon = document.createElement('i');
     newCardIcon.classList.add('card-icon');
-    // Add more options for weather icons
-    // (Thunderstorm, Drizzle, Rain, Snow, Clear, Clouds, Mist, Smoke, Haze, Dust, Fog, Sand, Ash, Squall, Tornado)
 
     if (weather === 'Clear') {
         newCardIcon.classList.add('fa-solid', 'fa-sun');
